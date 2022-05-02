@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+                <title>News</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="shortcut icon" href="logo_bear.png">
+                <link href="./news.css" type="text/css" rel="stylesheet">
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js'></script>
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+                <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <noscript>Please enable javascript to view the page content.</noscript>
+        </head>
+
+    <body>
+        <div id="loading">
+            <div class="sk-cube-grid">
+                <img class="sk-cube sk-cube1" src="Elements/loader/Polygon 2.png">
+                <img class="sk-cube sk-cube2" src="Elements/loader/Polygon 11.png">
+                <img class="sk-cube sk-cube3" src="Elements/loader/Polygon 10.png">
+                <img class="sk-cube sk-cube4" src="Elements/loader/Polygon 9.png">
+                <img class="sk-cube sk-cube5" src="Elements/loader/Polygon 8.png">
+                <img class="sk-cube sk-cube6" src="Elements/loader/Polygon 7.png">
+                <img class="sk-cube sk-cube7" src="Elements/loader/Polygon 6.png">
+                <img class="sk-cube sk-cube8" src="Elements/loader/Polygon 5.png">
+                <img class="sk-cube sk-cube9" src="Elements/loader/Polygon 4.png">
+                <img class="sk-cube sk-cube10" src="Elements/loader/Polygon 3.png">
+                <img class="sk-cube sk-cube11" src="Elements/loader/Polygon 1.png">
+              </div>
+        </div>
+        <div id="header">
+            <a class="column left" href="./index.html" id="home_button"> Home</a>
+
+            <div class="dropdown">
+                    <button type="button" class="btn" data-toggle="dropdown">
+                        <img src='./Elements/landingPage/mobile_nav.png' id='nav-button'>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class='dropdown-item' href="./news.html" style="color: #F3A47D;">&lt;News&gt;</a>
+                        <a class='dropdown-item' href="./researchers.html">&lt;For Researchers&gt;</a>
+                        <a class='dropdown-item' href="./faq.html">&lt;FAQs&gt;</a>
+                    </div>
+            </div>
+
+
+            <nav class="column right">
+                <ul id="navbar">
+                    <li><a href="./news.html" style="color: #F3A47D;">&lt;News&gt;</a></li>
+                    <li><a href="./researchers.html">&lt;For Researchers&gt;</a></li>
+                    <li><a href="./faq.html">&lt;Other info&gt;</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1 style='position: relative; display: inline-block; left: 10%; margin-top: 5%; color: #2E488E;'>News</h1>
+        <br>
+
+
+        <div class="container" id="project-grid">
+        <div class="row" id="row-2">
+
+            <div class="col-2">
+                    <div id='project-4' class='project-item'>
+                        <p>Personal Profit in Congress</p>
+                            <a href='https://www.nytimes.com/2022/01/24/briefing/congress-stock-investments-profits.html' target='_blank'>
+                                <span class='link-spanner'></span>
+                            </a>
+                    </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container" id="project-grid">
+        <div class="row" id="row-1">
+            <div class="col-2">
+                <div id='project-1' class='project-item'>
+                    <p>Senator Perdue's Stock Portfolio</p>
+
+                    <a href='https://www.nytimes.com/2020/12/02/us/politics/david-perdue-stock-trades.html' target='_blank'>
+                        <span class='link-spanner'></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class='col-2'>
+                    <div id='project-2' class='project-item'>
+                            <p>Congress Trade Reports 2021</p>
+
+                            <a href='https://www.nytimes.com/2021/12/17/business/dealbook/congress-stock-trades.html' target='_blank'>
+                                <span class='link-spanner'></span>
+                            </a>
+                        </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+        <footer>
+            <ul>
+                <li class="footer-nav"><a href="./index.html">Home</a></li>
+                <li class="footer-nav"><a href="./news.html" style="color: #F3A47D;">News</a></li>
+                <li class="footer-nav"><a href="./researchers.html">For Researchers</a></li>
+                <li class="footer-nav"><a href="./apply.html">Other Info</a></li>
+            </ul>
+
+            <div id="contact">
+                <h2>&gt; Contact Us</h2>
+                <p>[1] email: team@bearwatch.com </p>
+            </div>
+
+            <ul id="social">
+
+                <p>Copyright © 2022 Bear Watch.<br>All rights reserved.</p>
+            </ul>
+        </footer>
+        <script>
+
+            $(window).on("load", function(){
+                setTimeout(function() {
+                $("#loading").fadeOut("slow");
+            }, 1000);
+            });
+
+        </script>
+    </body>
+</html>
